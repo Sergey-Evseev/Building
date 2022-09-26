@@ -8,9 +8,13 @@ namespace Building.Team
 {
     internal class Basement : IPart
     {
-        
-        public static string basement() {
-            return "\n===============";              
+        public void create(House house)
+        {
+            house.basement = new Basement();
         }
+
+        public static string basement() {
+            return "================";              
+        }        
     }
 }

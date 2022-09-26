@@ -8,7 +8,6 @@ namespace Building
 {
     internal interface IPart
     {       
-        //void printInfo();
-        //double costCalculation();
+        void create(House house);        
     }
 }

@@ -8,6 +8,11 @@ namespace Building.Parts
 {
     internal class Roof : IPart
     {
+        public void create(House house)
+        {
+            house.roof = new Roof();
+        }
+
         public static void printRoof(int size) 
         {
             for (int i = 0; i <= size; i++) 
@@ -24,5 +29,7 @@ namespace Building.Parts
                 }
             }
         }
+
+        
     }
 }

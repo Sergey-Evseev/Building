@@ -23,21 +23,7 @@ using System.Threading.Tasks;
 namespace Building
 {
     internal class Program
-    {
-        class House : IPart {
-            public void drawHouse() 
-            {
-                Roof.printRoof(8);                
-                Console.WriteLine(Window.window());
-                Console.WriteLine(Door.door());
-                Console.WriteLine(Basement.basement());
-            }
-
-            public string house() 
-            {
-                return "Building finished";            
-            }            
-        }
+    {        
 
         static void Main(string[] args)
         {

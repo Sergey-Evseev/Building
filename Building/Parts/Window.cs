@@ -8,9 +8,14 @@ namespace Building.Parts
 {
     internal class Window : IPart
     {
+        public void create(House house)
+        {
+            house.window.Add(new Window());
+        }
+
         public static string window()
         {
             return "\n[ ] [ ] [ ] [ ]";
-        }
+        }        
     }
 }
