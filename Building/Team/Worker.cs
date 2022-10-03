@@ -8,7 +8,7 @@ namespace Building.Team
 {
     internal class Worker : IWorker
     {
-        string Name { get; set; }
+        string Name { get; set; }//поле от интерфейса
         string IWorker.Name => Name;
 
         public Worker(string name) {
@@ -20,8 +20,14 @@ namespace Building.Team
             if (house.basement == null) {
                 Basement basement = new Basement();
                 basement.create(house);
-                leader.report.Add($"Worker {Name} builded the basement");
-            } 
+                leader.reportList.Add($"Worker {Name} builded the basement");
+            }
+            else if (house.walls == null || house.walls.Count < 4)
+            {
+                if (house.walls == null) house.walls = new 
+
+            }
+
         
         }
 

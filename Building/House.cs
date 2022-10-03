@@ -17,15 +17,19 @@ namespace Building
         public Roof roof;
         
         
-        public void drawHouse()
+        public void drawHouse(TeamLeader leader)
             {
+            if (leader.reportList.Count == 11)
+                {
                 Roof.printRoof(8);
                 Console.WriteLine(Window.window());
                 Console.WriteLine(Door.door());
                 Console.WriteLine(Basement.basement());
+                }
+            else Console.WriteLine("The house is not built yet");
             }
 
-            public string house()
+            public string house() //??
             {
                 return "Building finished";
             }        
