@@ -28,7 +28,41 @@ namespace Building
         static void Main(string[] args)
         {
             House house = new House();
-            house.drawHouse();  
+            Team.Team team = new Team.Team();                       
+            
+            Console.WriteLine(team.Name);
+
+            Random random = new Random();
+
+            //house.drawHouse();  
+
+            for (int i = 0; i < 5; i++)
+            {
+                team.workers[random.Next(0, 3)].Build(house, team.leader);
+            }
+            
+            foreach (var item in team.leader.reportList)
+            {
+                Console.WriteLine(item);
+            }
+
+            team.leader.Report();
+            Console.WriteLine();
+
+            for (int i = 0; i < 6; i++)
+            {
+                team.workers[random.Next(0, 3)].Build(house, team.leader);
+            }
+
+            foreach (var item in team.leader.reportList)
+            {
+                Console.WriteLine(item);
+            }
+
+            team.leader.Report();
+
+            house.drawHouse(team.leader);
+            Console.ReadKey();
         }
     }
 }

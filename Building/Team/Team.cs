@@ -15,9 +15,9 @@ namespace Building.Team
         public List<Worker> workers;
 
         public Team() {
-            leader = new TeamLeader("Petrovich");
+            leader = new TeamLeader("Petrovich");//создаем экземпляр тимлидера
             
-            workers = new List<Worker> {
+            workers = new List<Worker> {//инициализация списка workers
             new Worker ("Alex"), new Worker ("Den"), new Worker ("Ivan"), new Worker ("Vadim"), new Worker ("Oleg")
             };
         }
