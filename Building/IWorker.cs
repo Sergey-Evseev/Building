@@ -8,6 +8,6 @@ namespace Building
 {
     internal interface IWorker
     {
-        string name { get; }
+        string Name { get; }
     }
 }

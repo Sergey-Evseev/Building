@@ -8,5 +8,18 @@ namespace Building.Team
 {
     internal class Team : IWorker
     {
+        public string Name {
+            get => "Best Contractors";
+        }
+        public TeamLeader leader;
+        public List<Worker> workers;
+
+        public Team() {
+            leader = new TeamLeader("Petrovich");
+            
+            workers = new List<Worker> {
+            new Worker ("Alex"), new Worker ("Den"), new Worker ("Ivan"), new Worker ("Vadim"), new Worker ("Oleg")
+            };
+        }
     }
 }

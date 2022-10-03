@@ -8,6 +8,6 @@ namespace Building
 {
     internal interface IPart
     {       
-        void create(House house);        
+        void create (House house);        
     }
 }

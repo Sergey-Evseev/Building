@@ -8,9 +8,14 @@ namespace Building.Parts
 {
     internal class Door : IPart
     {
+        public void create(House house)
+        {
+            house.door = new Door();
+        }
+
         public static string door()
         {
             return "|| / |_________|\n|| / |_________|";
-        }
+        }        
     }
 }

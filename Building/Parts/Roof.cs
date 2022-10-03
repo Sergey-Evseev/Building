@@ -28,8 +28,6 @@ namespace Building.Parts
                     Console.Write("* ");
                 }
             }
-        }
-
-        
+        }        
     }
 }

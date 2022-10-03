@@ -8,5 +8,13 @@ namespace Building.Team
 {
     internal class TeamLeader : IWorker
     {
+        string Name { get; set; }
+        public List<string> report = new List<string>(); 
+        string IWorker.Name => Name;
+
+        public Worker(string name) {
+            Name = name;
+        }
+
     }
 }
