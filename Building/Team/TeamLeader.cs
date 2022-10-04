@@ -16,7 +16,7 @@ namespace Building.Team
             Name = name;
         }
 
-        public void ProgressReport() {
+        public void ProgressReport() {//подсчет и вывод прогресса стройки
             double count = (reportList.Count / 11.0) * 100;
             Console.WriteLine($"{(int) count}% of work completed");
         }

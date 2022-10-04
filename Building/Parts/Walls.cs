@@ -8,8 +8,8 @@ namespace Building.Parts
 {
     internal class Walls : IPart
     {
-        public void create(House house) {
-            house.walls.Add(new Walls());
+        public void create(House house) {//метод создания стены в классе
+            house.walls.Add(new Walls());//добавление стены в список стен
         }
 
         public string walls()

@@ -12,7 +12,7 @@ namespace Building.Team
             get => "Best Contractors";
         }
         public TeamLeader leader;
-        public List<Worker> workers;
+        public List<Worker> workers; //список рабочих
 
         public Team() {
             leader = new TeamLeader("Ivan Petrovich");//создаем экземпляр тимлидера

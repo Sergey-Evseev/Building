@@ -22,7 +22,8 @@ namespace Building.Team
             if (house.basement == null)
             {
                 Basement basement = new Basement();
-                basement.create(house);
+                basement.create(house); //метод создания бассейна в классе House
+                //после созд. объекта в список отчета добавляется имя работника
                 leader.reportList.Add($"Worker {Name} built the basement");
             }
             else if (house.walls == null || house.walls.Count < 4)
