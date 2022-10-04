@@ -10,9 +10,9 @@ namespace Building
 {
     internal class House 
     {
-        public Basement basement;
-        public List <Walls> walls;
-        public List<Window> window;
+        public Basement basement; 
+        public List <Walls> walls; //список стен
+        public List<Window> window; //список окон
         public Door door;
         public Roof roof;
         

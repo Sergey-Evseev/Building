@@ -33,19 +33,17 @@ namespace Building
             Console.WriteLine(team.Name);
 
             Random random = new Random();
+                        
 
-            //house.drawHouse();  
-
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
                 team.workers[random.Next(0, 3)].Build(house, team.leader);
             }
-                       
-
-            team.leader.Report();
+            
+            team.leader.ProgressReport();
             Console.WriteLine();
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 5; i++)
             {
                 team.workers[random.Next(0, 3)].Build(house, team.leader);
             }
@@ -55,7 +53,7 @@ namespace Building
                 Console.WriteLine(item);
             }
 
-            team.leader.Report();
+            team.leader.ProgressReport();
 
             house.drawHouse(team.leader);
             Console.ReadKey();
