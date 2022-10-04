@@ -12,9 +12,10 @@ namespace Building.Parts
             house.walls.Add(new Walls());//добавление стены в список стен
         }
 
-        public string walls()
+        public static string walls()
         {
-            return "|                |\n|                |\n|________________|";
+            System.Threading.Thread.Sleep(300);
+            return "\n|             |";
         }
     }
 }

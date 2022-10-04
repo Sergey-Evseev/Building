@@ -15,7 +15,8 @@ namespace Building.Parts
 
         public static string window()
         {
-            return "\n[ ] [ ] [ ] [ ]";
+            System.Threading.Thread.Sleep(300);
+            return "[ ] [ ] [ ] [ ]";            
         }        
     }
 }

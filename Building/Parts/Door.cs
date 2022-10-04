@@ -8,14 +8,15 @@ namespace Building.Parts
 {
     internal class Door : IPart
     {
-        public void create(House house) //создание двери в конструкторе
+        public void create(House house) //создание двери
         {
             house.door = new Door();
         }
 
         public static string door()
         {
-            return "|| / |_________|\n|| / |_________|";
+            System.Threading.Thread.Sleep(300);
+            return "|| / |________|\n|| / |________|";
         }        
     }
 }

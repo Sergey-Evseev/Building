@@ -26,6 +26,7 @@ namespace Building.Parts
                 for (int j = 0; j < i; j++)
                 {
                     Console.Write("* ");
+                    System.Threading.Thread.Sleep(20);
                 }
             }
         }        

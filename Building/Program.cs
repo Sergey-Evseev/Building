@@ -18,13 +18,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace Building
 {
     internal class Program
-    {        
-
+    { 
         static void Main(string[] args)
         {
             House house = new House();
@@ -44,9 +43,11 @@ namespace Building
             foreach (var item in team.leader.reportList) 
             {
                 Console.WriteLine(item);
+                Thread.Sleep(200);
             }
             //промежуточный отчет прогресса строительства//
             team.leader.ProgressReport();
+            house.drawHouse(team.leader);
             Console.WriteLine();
 
             //2-й этап строительства: дверь, 4 окна, и крыша
@@ -58,6 +59,7 @@ namespace Building
             foreach (var item in team.leader.reportList)
             {
                 Console.WriteLine(item);
+                Thread.Sleep(200);
             }
             //2-й отчет прогресса строительства//
             team.leader.ProgressReport();

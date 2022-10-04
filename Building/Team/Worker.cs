@@ -31,20 +31,20 @@ namespace Building.Team
                 if (house.walls == null) house.walls = new List<Walls>();
                 Walls wall = new Walls();
                 wall.create(house);
-                leader.reportList.Add($"Worker {Name} built the wall {house.walls.Count}");
+                leader.reportList.Add($"Worker {Name} built the wall #{house.walls.Count}");
             }
             else if (house.door == null)
             {
                 Door door = new Door();
                 door.create(house);
-                leader.reportList.Add($"Worker {Name} built the door {house.window.Count}");
+                leader.reportList.Add($"Worker {Name} installed the door");
             }
             else if (house.window == null || house.window.Count < 4)
-            {
+            {   //добавление окон в список окон
                 if (house.window == null) house.window = new List<Window>();
                 Window window = new Window();
                 window.create(house);
-                leader.reportList.Add($"Worker {Name} built the window {house.window.Count}");
+                leader.reportList.Add($"Worker {Name} installed the window #{house.window.Count}");
             }
             else if (house.roof == null)
             {

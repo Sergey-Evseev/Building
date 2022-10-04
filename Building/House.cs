@@ -22,17 +22,16 @@ namespace Building
             if (leader.reportList.Count == 11)
                 {
                 Roof.printRoof(8);
+                Console.WriteLine(Walls.walls());
                 Console.WriteLine(Window.window());
+                Console.WriteLine(Walls.walls());
                 Console.WriteLine(Door.door());
                 Console.WriteLine(Basement.basement());
-                }
-            else Console.WriteLine("The house is not built yet");
-            }
 
-            public string house() //??
-            {
-                return "Building finished";
-            }        
+                Console.WriteLine("\nBuilding finished");
+            }
+            else Console.WriteLine("The house is not built yet");
+            }           
 
     }
 }
