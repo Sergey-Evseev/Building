@@ -40,11 +40,7 @@ namespace Building
             {
                 team.workers[random.Next(0, 3)].Build(house, team.leader);
             }
-            
-            foreach (var item in team.leader.reportList)
-            {
-                Console.WriteLine(item);
-            }
+                       
 
             team.leader.Report();
             Console.WriteLine();
