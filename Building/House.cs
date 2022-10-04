@@ -27,7 +27,6 @@ namespace Building
                 Console.WriteLine(Walls.walls());
                 Console.WriteLine(Door.door());
                 Console.WriteLine(Basement.basement());
-
                 Console.WriteLine("\nBuilding finished!");
             }
             else Console.WriteLine("The house is not built yet");
