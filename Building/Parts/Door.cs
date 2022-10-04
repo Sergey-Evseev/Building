@@ -8,7 +8,7 @@ namespace Building.Parts
 {
     internal class Door : IPart
     {
-        public void create(House house)
+        public void create(House house) //создание двери в конструкторе
         {
             house.door = new Door();
         }

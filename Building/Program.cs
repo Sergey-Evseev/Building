@@ -30,11 +30,11 @@ namespace Building
             House house = new House();
             Team.Team team = new Team.Team();                       
             
-            Console.WriteLine($"Team Name: {team.Name}");
+            Console.WriteLine($"Team Name: {team.Name}\n");
 
             Random random = new Random();
 
-            //1-й этап: цикл строительства фундамента и стен//
+            //1-й этап: цикл строительства: фундамент и 4 стены//
             for (int i = 0; i < 5; i++)
             {   //случайный рабочий вызывает метод Build
                 team.workers[random.Next(0, 4)].Build(house, team.leader);
@@ -54,12 +54,12 @@ namespace Building
             {
                 team.workers[random.Next(0, 3)].Build(house, team.leader);
             }
-
+            //отчет по второму этапу строительства//
             foreach (var item in team.leader.reportList)
             {
                 Console.WriteLine(item);
             }
-
+            //2-й отчет прогресса строительства//
             team.leader.ProgressReport();
 
             house.drawHouse(team.leader);
