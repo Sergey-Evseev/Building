@@ -10,14 +10,14 @@ namespace Building.Team
     {
         public string Name { get; set; }
 
-        public List<string> reportList = new List<string>(); //создание списка отчета
+        public List<string> progressList = new List<string>(); //создание списка отчета
         
         public TeamLeader(string name) {
             Name = name;
         }
 
-        public void ProgressReport() {//подсчет и вывод прогресса стройки
-            double count = (reportList.Count / 11.0) * 100;
+        public void PercentageReport() {//подсчет и вывод прогресса стройки
+            double count = (progressList.Count / 11.0) * 100; //всего 11 этапов строительства
             Console.WriteLine($"Currently {(int) count}% of work completed");
         }
     }

@@ -29,6 +29,7 @@ namespace Building.Parts
                     System.Threading.Thread.Sleep(20);
                 }
             }
+            Console.WriteLine();
         }        
     }
 }

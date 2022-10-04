@@ -16,7 +16,7 @@ namespace Building.Parts
         public static string door()
         {
             System.Threading.Thread.Sleep(300);
-            return "|| / |________|\n|| / |________|";
+            return "|| / |        |\n|| / |        |";
         }        
     }
 }

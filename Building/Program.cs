@@ -40,13 +40,13 @@ namespace Building
             }
 
             //отчет по 1-му этапу строительства//
-            foreach (var item in team.leader.reportList) 
+            foreach (var item in team.leader.progressList) 
             {
                 Console.WriteLine(item);
-                Thread.Sleep(200);
+                Thread.Sleep(100);
             }
-            //промежуточный отчет прогресса строительства//
-            team.leader.ProgressReport();
+            //промежуточный прогресс строительства//
+            team.leader.PercentageReport();
             house.drawHouse(team.leader);
             Console.WriteLine();
 
@@ -56,13 +56,13 @@ namespace Building
                 team.workers[random.Next(0, 3)].Build(house, team.leader);
             }
             //отчет по второму этапу строительства//
-            foreach (var item in team.leader.reportList)
+            foreach (var item in team.leader.progressList)
             {
                 Console.WriteLine(item);
-                Thread.Sleep(200);
+                Thread.Sleep(100);
             }
-            //2-й отчет прогресса строительства//
-            team.leader.ProgressReport();
+            //2-й прогресс строительства//
+            team.leader.PercentageReport();
 
             house.drawHouse(team.leader);
             Console.ReadKey();

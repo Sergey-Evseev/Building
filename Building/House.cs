@@ -19,7 +19,7 @@ namespace Building
         
         public void drawHouse(TeamLeader leader)
             {
-            if (leader.reportList.Count == 11)
+            if (leader.progressList.Count == 11)
                 {
                 Roof.printRoof(8);
                 Console.WriteLine(Walls.walls());
@@ -28,10 +28,9 @@ namespace Building
                 Console.WriteLine(Door.door());
                 Console.WriteLine(Basement.basement());
 
-                Console.WriteLine("\nBuilding finished");
+                Console.WriteLine("\nBuilding finished!");
             }
             else Console.WriteLine("The house is not built yet");
-            }           
-
+        } 
     }
 }

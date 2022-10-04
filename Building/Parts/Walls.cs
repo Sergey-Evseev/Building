@@ -15,7 +15,7 @@ namespace Building.Parts
         public static string walls()
         {
             System.Threading.Thread.Sleep(300);
-            return "\n|             |";
+            return "|             |";
         }
     }
 }
